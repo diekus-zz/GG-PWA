@@ -1,0 +1,113 @@
+html, body {
+    background: #202020;
+}
+
+#_goals_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    background: linear-gradient(rgba(32,32,32,0) 0%, rgba(32,32,32,1) 50%), url(../images/raster/top_image.jpg);
+    background-position: top;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+#_goals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em 0em;
+    justify-items: center;
+    background: content-box linear-gradient(rgba(32, 32, 32, 0) 0%, rgb(32, 32, 32) 10%);
+}
+
+#_goals_title {
+    min-height: 320px;
+    max-width: 54vw;
+    margin: 4em 0em 0em 1.5em;
+}
+
+.gg-goal {
+    width: 47vw;
+    height: 47vw;
+    border: 0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    justify-items: center;
+}
+
+.gg-g1 {
+    background-color: var(--gg1-no-poverty);
+}
+
+.gg-g2 {
+    background-color: var(--gg2-zero-hunger);
+}
+
+.gg-g3 {
+    background-color: var(--gg3-good-health);
+}
+
+.gg-g4 {
+    background-color: var(--gg4-quality-education);
+}
+
+.gg-g5 {
+    background-color: var(--gg5-gender-equality);
+}
+
+.gg-g6 {
+    background-color: var(--gg6-clean-water);
+}
+
+.gg-g7 {
+    background-color: var(--gg7-clean-energy);
+}
+
+.gg-g8 {
+    background-color: var(--gg8-decent-work);
+}
+
+.gg-g9 {
+    background-color: var(--gg9-industry);
+}
+
+.gg-g10 {
+    background-color: var(--gg10-reduced-inequalities);
+}
+
+.gg-g11 {
+    background-color: var(--gg11-sustainable-cities);
+}
+
+.gg-g12 {
+    background-color: var(--gg12-responsible-consumption);
+}
+
+.gg-g13 {
+    background-color: var(--gg13-climate-action);
+}
+
+.gg-g14 {
+    background-color: var(--gg14-life-below-water);
+}
+
+.gg-g15 {
+    background-color: var(--gg15-life-on-land);
+}
+
+.gg-g16 {
+    background-color: var(--gg16-peace-justice);
+}
+
+.gg-g17 {
+    background-color: var(--gg17-partnerships);
+}
+
+.gg-g18 {
+    background-color: var(--gg18-global-goals);
+}

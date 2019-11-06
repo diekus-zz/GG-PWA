@@ -1,0 +1,33 @@
+.oui-viewing {
+    scroll-snap-align: start;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40%;
+}
+
+.oui-viewing-title {
+    text-align: center;
+    word-wrap: break-word;
+    width: 60%;
+}
+
+.oui-interaction {
+    min-height: 60%;
+    scroll-snap-align: start;
+    margin-bottom: 60pt;
+}
+
+@media (min-width: 800px) {
+    .container {
+        margin: auto 20vw;
+        max-width: 60vw;
+        width: 100%;
+    }
+
+    .oui-tab, .oui-toast, .oui-dialog {
+        max-width: 60vw;
+    }
+}
