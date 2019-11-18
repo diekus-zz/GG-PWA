@@ -25,9 +25,8 @@ html, body {
 
 
 #_goals_title {
-    min-height: 320px;
     max-width: 54vw;
-    margin: 4em 0em 0em 1.5em;
+    margin: 4em 0em 1.5em 1.5em;
 }
 
 .gg-goal {
