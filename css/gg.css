@@ -80,6 +80,15 @@ main {
     overflow: scroll;
 }
 
+#_main_content {
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em 0em;
+    justify-items: center;
+    background: content-box linear-gradient(rgba(32, 32, 32, 0) 0%, var(--background) 15%);
+}
+
 h1 {
     font-family: SamsungSharpSans-Bold;
     font-size: 1.3rem;
