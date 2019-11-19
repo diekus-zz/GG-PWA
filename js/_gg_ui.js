@@ -8,16 +8,12 @@ window.addEventListener('load', () => {
             if (entry.intersectionRatio > 0) {
                 document.querySelector('._sticky_title').classList.add('_sticky_title_disappear');
                 document.querySelector('._sticky_title').classList.remove('_sticky_title_appear');
-                console.log('title is in');
             } else {
                 document.querySelector('._sticky_title').classList.add('_sticky_title_appear');
                 document.querySelector('._sticky_title').classList.remove('_sticky_title_disappear');
-                console.log('title is out');
             }
         });
-        console.log(entries);
     });
-
     observer.observe(_page_title);
 });
 

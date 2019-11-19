@@ -22,11 +22,24 @@
     --gg18-global-goals: #f1f1f1;
 
     /*ui vars*/
-    --background: rgba(32, 32, 32, 1);
     --active-category: #01b3e3;
 
     /*time*/
     --anim-titles: .5s;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: rgba(32, 32, 32, 1);
+        color: white;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: rgba(0, 0, 0, 1);
+        color: white;
+    }
 }
 
 html, body {
@@ -92,11 +105,13 @@ main {
 h1 {
     font-family: SamsungSharpSans-Bold;
     font-size: 1.3rem;
+    color: white;
 }
 
 h2 {
     font-size: 1rem;
     font-weight: bold;
+    color: white;
 }
 
 ._sticky_title {
@@ -146,3 +161,4 @@ h2 {
     background-repeat: no-repeat;
     background-size: 100vw;
 }
+
