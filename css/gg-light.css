@@ -1,0 +1,4 @@
+:root {
+    --background: rgba(32, 32, 32, 1);
+    color: var(--white);
+}

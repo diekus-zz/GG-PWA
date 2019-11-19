@@ -1,6 +1,5 @@
 window.addEventListener('load', () => {
     /*Sticky header global app*/
-
     let _page_title = document.querySelector('#_page_title');
 
     let observer = new IntersectionObserver(entries => {

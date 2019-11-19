@@ -23,23 +23,10 @@
 
     /*ui vars*/
     --active-category: #01b3e3;
+    --white: rgb(250, 250, 250);
 
     /*time*/
     --anim-titles: .5s;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --background: rgba(32, 32, 32, 1);
-        color: white;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: rgba(0, 0, 0, 1);
-        color: white;
-    }
 }
 
 html, body {
