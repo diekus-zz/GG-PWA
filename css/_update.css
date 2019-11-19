@@ -1,0 +1,60 @@
+.sgg_logo {
+    height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.header-bg {   
+    background: linear-gradient(rgba(32,32,32,0) 0%, var(--background) 40%), url(../images/raster/updates_header.jpg);
+    background-position: top;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.gg-bubble-vert {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0px;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.bubble-img-vert {
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bubble-cont-vert {
+    padding: 2em 1.5em;
+}
+
+.bubble-cont-vert p {
+    margin: 1em 0em 2.5em 0em;
+}
+
+.gg-bubble-horz {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 6em auto;
+    padding: 0px;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.bubble-cont-horz {
+    padding: 2em 1.5em;
+    grid-row: 2 / 3;
+}
+
+.bubble-cont-horz p {
+    margin: 1em 0em 2.5em 0em;
+}
+.bubble-img-horz {
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

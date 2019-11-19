@@ -81,11 +81,6 @@ main {
 }
 
 #_main_content {
-    padding-bottom: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em 0em;
-    justify-items: center;
     background: content-box linear-gradient(rgba(32, 32, 32, 0) 0%, var(--background) 15%);
 }
 
@@ -99,6 +94,17 @@ h2 {
     font-size: 1rem;
     font-weight: bold;
     color: white;
+}
+
+h3 {
+    font-family: SamsungSharpSans-Bold;
+    font-size: 1rem;
+}
+
+a:link, a:active, a:visited {
+    color: var(--active-category);
+    font-size: 1.3em;
+    text-decoration: none;
 }
 
 ._sticky_title {
@@ -141,11 +147,5 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    background: linear-gradient(rgba(32,32,32,0) 0%, var(--background) 40%), url(../images/raster/top_image.jpg);
-    background-position: top;
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    background-size: 100vw;
 }
 

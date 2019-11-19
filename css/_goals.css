@@ -1,3 +1,19 @@
+.header-bg {   
+    background: linear-gradient(rgba(32,32,32,0) 0%, var(--background) 40%), url(../images/raster/goals_header.jpg);
+    background-position: top;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.main-content-layout {
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em 0em;
+    justify-items: center;
+}
+
 .gg-goal {
     width: 47vw;
     height: 47vw;

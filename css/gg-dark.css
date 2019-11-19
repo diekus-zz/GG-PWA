@@ -1,4 +1,13 @@
 :root {
-    --background: rgba(0, 0, 0, 1);
+    --background: #000000;
+    --active-category: #4297FF;
+    color: var(--white);
+}
+
+#_page_title p {
+    color: var(--white);
+}
+
+#_page_title h1, #_page_title h2 {
     color: var(--white);
 }
