@@ -1,18 +1,4 @@
-html, body {
-    background: #202020;
-}
 
-#_goals_container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%), url(../images/raster/top_image.jpg);
-    background-position: top;
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    background-size: 100vw;
-}
 
 #_goals {
     padding-bottom: 1rem;
@@ -20,15 +6,8 @@ html, body {
     grid-template-columns: 1fr 1fr;
     gap: 1em 0em;
     justify-items: center;
-    background: content-box linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%);
+    background: content-box linear-gradient(rgba(32, 32, 32, 0) 0%, var(--background) 15%);
 }
-
-
-#_goals_title {
-    max-width: 54vw;
-    margin: 4em 0em 1.5em 1.5em;
-}
-
 .gg-goal {
     width: 47vw;
     height: 47vw;
