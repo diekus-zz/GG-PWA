@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
     /*cards animation entrance*/
     let contentCards = document.querySelectorAll('.gg-bubble-vert, .gg-bubble-horz');
     let animCardEntry = [
-        { transform: 'translateX(200px)' },
+        { transform: 'translateX(300px)' },
         { transform: 'translateX(0px)' }
     ];
     let animCardEntryTiming = {
