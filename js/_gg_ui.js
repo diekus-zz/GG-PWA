@@ -1,3 +1,12 @@
+// If `prefers-color-scheme` is not supported, fall back to light mode.
+if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+    document.documentElement.style.display = 'none';
+    document.head.insertAdjacentHTML(
+        'beforeend',
+        '<link rel="stylesheet" href="css/gg-light.css" onload="document.documentElement.style.display = \'\'">'
+    );
+}
+
 window.addEventListener('load', () => {
     /*Sticky header global app*/
     let _page_title = document.querySelector('#_page_title');
