@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
     /*Sticky header global app*/
     let _page_title = document.querySelector('#_page_title');
 
-    let observer = new IntersectionObserver(entries => {
+    let observerStickyTitle = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0) {
                 document.querySelector('._sticky_title').classList.add('_sticky_title_disappear');
@@ -22,45 +22,28 @@ window.addEventListener('load', () => {
             }
         });
     });
-    observer.observe(_page_title);
-
+    observerStickyTitle.observe(_page_title);
 
     /*cards animation entrance*/
-    const lis = Array.from(document.querySelectorAll('li'));
-    const intersectingEvent = new Event('intersecting');
+    let contentCards = document.querySelectorAll('.gg-bubble-vert, .gg-bubble-horz');
+    let animCardEntry = [
+        { transform: 'translateX(200px)' },
+        { transform: 'translateX(0px)' }
+    ];
+    let animCardEntryTiming = {
+        duration: 500,
+        easing: 'ease-out',
+        fill: 'forwards',
+    };
 
-    const intersectionObserverOptions = {
-        threshold: 0.25
-    }
-
-    let observer = new IntersectionObserver(entries => entries.forEach(function onIntersection({
-            isIntersecting,
-            target
-        }) {
-            if (isIntersecting) {
-                target.dispatchEvent(intersectingEvent);
-            }
-        }), intersectionObserverOptions);
-
-    lis.forEach(li => {
-        observer.observe(li);
-
-        // Have the box on the screen but invisible at the start
-        // Since it needs to be detected by the intersection observer
-        li.style.opacity = 0;
-
-        // Only once when it is intersecting do the animation and make it visible
-        li.addEventListener('intersecting', () => {
-            const animation = li.animate(
-            {'transform': ['translateX(100vw)','translateX(0)']},
-            {easing: getComputedStyle(document.documentElement).getPropertyValue('--easeInCubic'),
-             duration: 700,
-             fill: 'forwards'
-            });
-            li.style.opacity = 1;
-        }, {
-            once: true
+    let observerCards = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            let cardEntryAnim = entry.target.animate(animCardEntry, animCardEntryTiming);
+            cardEntryAnim.onfinish = function() { observerCards.unobserve(entry.target) };
         });
-    });
+    },
+    {threshold:0});
+    contentCards.forEach(card => { observerCards.observe(card); });
 });
+    
 
