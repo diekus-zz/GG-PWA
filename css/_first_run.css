@@ -1,3 +1,7 @@
+html {
+    overflow: hidden;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -24,9 +28,9 @@ body {
 }
 
 h1, p {
+    color: white;
     text-align: center;
     padding: 1.5rem;
-    align-self: flex-end;
     text-shadow: 0px 1px #3d3d3d;
 }
 
@@ -44,12 +48,10 @@ h1, p {
 .bg-fr {
     display: flex;
     flex-direction: row;
-    /* overflow: hidden; */
     width: 100vw;
     grid-row: 1 / -1;
     grid-column: 1 / -1;
     transition: transform 1s;
-
 }
 
 .fr-content {
