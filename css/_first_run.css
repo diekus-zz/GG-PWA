@@ -56,8 +56,8 @@ h1, p {
 
 .fr-content {
     width: 100vw;
-    padding: 50vh 0rem 0 0;
     z-index: 5;
+    padding: 2rem;
 }
 
 .fr-1 {
@@ -67,6 +67,7 @@ h1, p {
     background-size: cover;
     background-blend-mode: multiply;
     background-position: right;
+    padding: 42vh 0rem 0 0;
 }
 
 .fr-2 {
@@ -75,4 +76,5 @@ h1, p {
     background-image: url('/images/raster/updates_header.jpg') #291561;
     background-size: cover;
     background-position: right;
+    padding: 27vh 0rem 0 0;
 }
