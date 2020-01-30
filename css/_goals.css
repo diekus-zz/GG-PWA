@@ -10,7 +10,7 @@
     padding-bottom: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    grid-gap: 25px;
+    grid-gap: 20px;
     justify-items: stretch;
 }
 
@@ -99,3 +99,17 @@
 .gg-g18 {
     background-color: var(--gg18-global-goals);
 }
+
+@media (max-width: 350px) { 
+    .main-content-layout {
+        padding-bottom: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        grid-gap: 10px;
+    }
+
+    .gg-goal {
+        height: minmax(80px, 1fr);
+        width: minmax(80px, 1fr);
+    }
+ }
