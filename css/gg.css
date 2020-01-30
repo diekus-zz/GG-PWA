@@ -81,7 +81,6 @@ main {
 }
 
 #_main_content {
-    /* background: content-box linear-gradient(rgba(32, 32, 32, 0) 0%, var(--background) 15%); */
     width: 80vw;
     margin: auto;
 }
