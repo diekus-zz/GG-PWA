@@ -104,12 +104,12 @@
     .main-content-layout {
         padding-bottom: 1rem;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         grid-gap: 10px;
     }
 
     .gg-goal {
-        height: minmax(90px, 1fr);
-        width: minmax(90px, 1fr);
+        height: minmax(100px, 1fr);
+        width: minmax(100px, 1fr);
     }
  }
