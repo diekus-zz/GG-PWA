@@ -149,3 +149,8 @@ a:link, a:active, a:visited {
     width: 100%;
 }
 
+@media (max-width: 350px) { 
+    #_main_content {
+        width: 95vw;
+    }
+}
