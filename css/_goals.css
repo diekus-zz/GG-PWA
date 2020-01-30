@@ -100,7 +100,7 @@
     background-color: var(--gg18-global-goals);
 }
 
-@media (max-width: 350px) { 
+@media (max-width: 320px) { 
     .main-content-layout {
         padding-bottom: 1rem;
         display: grid;
@@ -109,7 +109,7 @@
     }
 
     .gg-goal {
-        height: minmax(110px, 1fr);
-        width: minmax(110px, 1fr);
+        height: minmax(120px, 1fr);
+        width: minmax(120px, 1fr);
     }
  }
