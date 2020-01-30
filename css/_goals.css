@@ -9,14 +9,12 @@
 .main-content-layout {
     padding-bottom: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em 0em;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 15px;
+    justify-items: stretch;
 }
 
 .gg-goal {
-    width: 47vw;
-    height: 47vw;
     border: 0;
     margin:0;
     padding: 0;
